@@ -1,0 +1,31 @@
+export const APP_ROUTES = {
+  PUBLIC: {
+    HOME: '/',
+    LOGIN: '/login',
+    REGISTER: '/register',
+    UNAUTHORIZED: '/unauthorized',
+    NOT_FOUND: '*',
+  },
+  CUSTOMER: {
+    ROOT: '/customer',
+    DASHBOARD: '/customer/dashboard',
+    SERVICES: '/customer/services',
+    BOOK_APPOINTMENT: '/customer/appointments/book',
+    APPOINTMENTS: '/customer/appointments',
+    WALK_IN: '/customer/tokens/walk-in',
+    TOKENS: '/customer/tokens',
+    TOKEN_DETAILS: '/customer/tokens/:id',
+    QUEUE: '/customer/queue',
+    PROFILE: '/customer/profile',
+  },
+  ADMIN: {
+    ROOT: '/admin',
+    DASHBOARD: '/admin/dashboard',
+    SERVICES: '/admin/services',
+    COUNTERS: '/admin/counters',
+    QUEUE: '/admin/queue',
+    TOKENS: '/admin/tokens',
+    APPOINTMENTS: '/admin/appointments',
+    ANALYTICS: '/admin/analytics',
+  },
+};

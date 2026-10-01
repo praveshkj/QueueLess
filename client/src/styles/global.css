@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  color: var(--text-primary);
+  background-color: var(--bg-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+h1 { font-size: var(--font-size-3xl); }
+h2 { font-size: var(--font-size-2xl); }
+h3 { font-size: var(--font-size-xl); }
+h4 { font-size: var(--font-size-lg); }
+
+p {
+  color: var(--text-secondary);
+}
+
+/* Common UI Badges & Tags */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.badge-waiting {
+  background-color: var(--color-warning-light);
+  color: #b45309;
+}
+
+.badge-checked_in {
+  background-color: var(--priority-p1-bg);
+  color: var(--priority-p1);
+}
+
+.badge-in_service {
+  background-color: var(--color-info-light);
+  color: #1d4ed8;
+}
+
+.badge-completed {
+  background-color: var(--color-success-light);
+  color: #047857;
+}
+
+.badge-cancelled {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.badge-no_show {
+  background-color: var(--color-danger-light);
+  color: #b91c1c;
+}
+
+.badge-p1 {
+  background-color: var(--priority-p1-bg);
+  color: var(--priority-p1);
+  border: 1px solid #c4b5fd;
+}
+
+.badge-p2 {
+  background-color: var(--priority-p2-bg);
+  color: var(--priority-p2);
+  border: 1px solid #bfdbfe;
+}
+
+.badge-p3 {
+  background-color: var(--priority-p3-bg);
+  color: var(--priority-p3);
+  border: 1px solid #fed7aa;
+}
+
+.badge-confirmed {
+  background-color: var(--color-success-light);
+  color: #047857;
+}
+
+.badge-pending {
+  background-color: var(--color-warning-light);
+  color: #b45309;
+}
+
+.border-danger {
+  border-color: var(--color-danger) !important;
+}
+
+/* Alert Boxes */
+.alert {
+  padding: 0.875rem 1rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.alert-error {
+  background-color: var(--color-danger-light);
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.alert-success {
+  background-color: var(--color-success-light);
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.alert-info {
+  background-color: var(--color-info-light);
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}

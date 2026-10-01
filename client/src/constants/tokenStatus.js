@@ -1,0 +1,17 @@
+export const TOKEN_STATUS = {
+  WAITING: 'WAITING',
+  CHECKED_IN: 'CHECKED_IN',
+  IN_SERVICE: 'IN_SERVICE',
+  COMPLETED: 'COMPLETED',
+  CANCELLED: 'CANCELLED',
+  NO_SHOW: 'NO_SHOW',
+};
+
+export const TOKEN_STATUS_COLORS = {
+  [TOKEN_STATUS.WAITING]: '#f59e0b',    // Amber
+  [TOKEN_STATUS.CHECKED_IN]: '#8b5cf6', // Purple
+  [TOKEN_STATUS.IN_SERVICE]: '#3b82f6', // Blue
+  [TOKEN_STATUS.COMPLETED]: '#10b981',  // Emerald
+  [TOKEN_STATUS.CANCELLED]: '#6b7280',  // Gray
+  [TOKEN_STATUS.NO_SHOW]: '#ef4444',    // Red
+};

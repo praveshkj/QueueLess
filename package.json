@@ -1,0 +1,20 @@
+{
+  "name": "queueless",
+  "version": "1.0.0",
+  "description": "QueueLess — AI Enhanced Digital Queue and Smart Token Management System",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "start:server": "npm --prefix server start",
+    "build:client": "npm --prefix client run build"
+  },
+  "keywords": [
+    "queueless",
+    "queue-management",
+    "smart-tokens",
+    "mern"
+  ],
+  "author": "",
+  "license": "ISC"
+}
